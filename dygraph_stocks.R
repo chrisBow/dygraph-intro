@@ -1,6 +1,5 @@
 # get stock price data
 library(quantmod)
-library(purrr)
 
 start <- as.Date("2018-01-01")
 end <- as.Date("2018-11-30")
