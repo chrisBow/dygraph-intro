@@ -21,6 +21,8 @@ stocks <- cbind(aapl, msft)
 
 head(stocks)
 
+class(stocks)
+
 
 # plot with ggplot
 
