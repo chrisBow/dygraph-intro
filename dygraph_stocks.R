@@ -31,7 +31,11 @@ autoplot(stocks)
 
 library(dygraphs)
 
+# basic chart
 dygraph(stocks)
+
+
+# customised chart
 
 library(dplyr)
 
