@@ -19,6 +19,8 @@ msft <- MSFT$MSFT.Close
 
 stocks <- cbind(aapl, msft)
 
+head(stocks)
+
 
 # plot with ggplot
 
