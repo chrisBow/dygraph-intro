@@ -17,7 +17,7 @@ msft <- MSFT$MSFT.Close
 
 # create single dataset
 
-stocks <- cbind(aapl, msft$MSFT.Close)
+stocks <- cbind(aapl, msft)
 
 
 # plot with ggplot
