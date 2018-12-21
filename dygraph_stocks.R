@@ -35,7 +35,7 @@ dygraph(stocks)
 
 library(dplyr)
 
-dygraph(stocks, main = "AAPL and MSFT Closing Price 1st Jan - 30th Nov 2018") %>%
+stock_dyg <- dygraph(stocks, main = "AAPL and MSFT Closing Price 1st Jan - 30th Nov 2018") %>%
   dySeries("MSFT.Close", axis = "y2") %>% 
   dyAxis("y", 
          label = "AAPL") %>%
@@ -46,3 +46,12 @@ dygraph(stocks, main = "AAPL and MSFT Closing Price 1st Jan - 30th Nov 2018") %>
   dyRangeSelector(dateWindow = c("2018-01-01", "2018-11-30")) %>%
   dyRoller()
 
+stock_dyg
+
+# save as html
+
+library(htmlwidgets)
+
+saveWidget(stock_dyg, 
+           "stock_dy.html",
+           selfcontained = TRUE)
